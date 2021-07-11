@@ -49,7 +49,33 @@
 	      </div>
 	    </div>
 	  </div>
-	  <c:set var="i" value="${i+1}"></c:set>
+	t <c:set var="i" value="${i+1}"></c:set>
+	</c:forEach>	  
+	</div>
+	<br><br><br>
+	<h2>FAQ</h2>
+	<hr>
+	<br><br><br>
+	<div class="panel-group" id="accordion2" role="tablist" aria-multiselectable="true">
+	<c:set var="j" value="10"></c:set>
+	<c:forEach var="flist" items="${flist }">
+	
+	  <div class="panel panel-default">
+	    <div class="panel-heading" role="tab" id="heading${j }">
+	      <h4 class="panel-title">
+		<a data-toggle="collapse" href="#collapse${j }" aria-expanded="true" aria-controls="collapse${j }">
+		  <span style="color: #FE2E2E;"><j class="fab fa-quora"></j></span>&nbsp; ${flist.title}
+		</a>
+	      </h4>
+	    </div>
+	    <div id="collapse${j }" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading${j }">
+	      <div class="panel-body">
+	      ${flist.contents }
+	      <br>
+	      </div>
+	    </div>
+	  </div>
+	  <c:set var="j" value="${j+1}"></c:set>
 	  </c:forEach>	  
 	</div>
 </div><!-- container -->
