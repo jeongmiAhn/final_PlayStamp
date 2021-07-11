@@ -186,16 +186,18 @@ public class PlayDetailController
 		}
 		
 		/*
-		 * if (dao.getUserGrade(user_id).equals("어둠회원") ||
-		 * dao.getUserGrade(user_id).equals("뉴비")) { //@@ 신고되었는지 여부 확인하는 리스트를 모델에 담아
-		 * 보낸다. model.addAttribute("checkRepPlayList", checkRepPlayList); //@@ 신고 처리 여부
-		 * 확인하는 리스트를 모델에 담아 보낸다. model.addAttribute("checkRepPlayStList",
-		 * checkRepPlayStList); model.addAttribute("playDetailList",
-		 * dao.getPlayDetail(play_cd)); model.addAttribute("playRevPreList",
-		 * dao.getPlayRevPreFirst(play_cd)); model.addAttribute("ratingAvg",
-		 * dao.getRatingAvg(play_cd)); model.addAttribute("checkJjim",checkJjim);
-		 * 
-		 * return "WEB-INF/views/play/PlayDetailForNewDark.jsp"; }
+		  if (dao.getUserGrade(user_id).equals("어둠회원") ||
+		  dao.getUserGrade(user_id).equals("뉴비")) { 
+			  //@@ 신고되었는지 여부 확인하는 리스트를 모델에 담아보낸다. 
+		  model.addAttribute("checkRepPlayList", checkRepPlayList); 
+		  //@@ 신고 처리 여부 확인하는 리스트를 모델에 담아 보낸다.
+		  model.addAttribute("checkRepPlayStList",checkRepPlayStList); 
+		  model.addAttribute("playDetailList",
+		  dao.getPlayDetail(play_cd)); model.addAttribute("playRevPreList",
+		  dao.getPlayRevPreFirst(play_cd)); model.addAttribute("ratingAvg",
+		  dao.getRatingAvg(play_cd)); model.addAttribute("checkJjim",checkJjim);
+		  
+		  return "WEB-INF/views/play/PlayDetailForNewDark.jsp"; }
 		 */
 		
 		
