@@ -1,11 +1,11 @@
- <%@ page contentType="text/html; charset=UTF-8"%>
+<%@ page contentType="text/html; charset=UTF-8"%>
 <%
 	request.setCharacterEncoding("UTF-8");
 	String cp = request.getContextPath();
 %>
 <%
-		Object user = session.getAttribute("id");
-		String userId = (String)user;
+	Object user = session.getAttribute("id");
+	String userId = (String)user;
 %>
 <!DOCTYPE html>
 <html>
@@ -33,7 +33,6 @@
 					<div class="top_bar_content ml-auto">
 					<div class="top_bar_user">
 						<%if(userId == null) {%>
-
 							<div class="bar_line">
 								<a href="signupform.action">회원가입</a>
 							</div>
@@ -48,10 +47,10 @@
 								<a href="logout.action">로그아웃</a>
 							</div>
 						<%} %>
-							<div>
+							<div class="bar_line">
 								<a href="usernotice.action">공지사항</a>
 							</div>
-							<div>
+							<div class="bar_line">
 								<a href="userfaq.action">FAQ</a>
 							</div>
 						</div>
@@ -75,8 +74,7 @@
 				<!-- Main Nav Menu -->
 				<div class="col-lg-5 order-2">
 					<div class="main_nav_menu">
-						<ul class="standard_dropdown main_nav_dropdown">
-						
+						<ul class="standard_dropdown main_nav_dropdown">					
 							<li><a href="myspace.action">마이스페이스</a></li>
 							<li><a href="musicallist.action">공연정보</a></li>
 							<li><a href="mseat.action">좌석정보</a></li>
@@ -105,7 +103,7 @@
 			</div>
 		</div>
 	</div>
-	</header>
+</header>
 
 </body>
 </html>

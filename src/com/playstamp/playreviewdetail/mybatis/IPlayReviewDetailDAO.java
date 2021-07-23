@@ -41,7 +41,7 @@ public interface IPlayReviewDetailDAO
 	public CommentBlind checkRepCom(String comment_cd);
 	
 	// 멤버 등급 얻어오는 메소드
-	public String getUserGrade(String user_id);
+	//public String getUserGrade(String user_id);
 	
 	// 별점 평균 산출하는 메소드
 	public Integer getRatingAvg(String play_cd);

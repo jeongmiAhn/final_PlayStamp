@@ -93,8 +93,7 @@ public class PlayReviewDetailController
 			// 신고 처리 x → 0
 			checkRepComStList.add(checkRepComSt);			
 		}
-		
-		
+		/*
 		  if (dao.getUserGrade(user_id).equals("어둠회원")) { 
 			  //@@ 신고되었는지 여부 확인하는 리스트를 모델에 담아 보낸다. 
 			  model.addAttribute("checkRepComList", checkRepComList); 
@@ -110,7 +109,7 @@ public class PlayReviewDetailController
 		  model.addAttribute("ratingAvg", dao.getRatingAvg(play_cd));
 		  
 		  return "WEB-INF/views/play/PlayReviewDetailForDark.jsp"; }
-		 
+		 */
 		
 		//@@ 신고되었는지 여부 확인하는 리스트를 모델에 담아 보낸다.
 		model.addAttribute("checkRepComList", checkRepComList);

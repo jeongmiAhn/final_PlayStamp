@@ -142,6 +142,13 @@
 		background-color: #fafafa;
 	}
 	
+	
+	#textbox
+	{
+		width: 1300px;
+		margin: 0 auto;
+	}
+	
 </style>
 <script type="text/javascript">
 	
@@ -156,7 +163,7 @@
 <div id="wrapper">
 
 	<div id="textbox">
-	<h5><img src="<%=cp%>/images/addReviewIcon.PNG" width="20px" height="20px">나의 관람 리뷰</h5>
+	<h5><img src="<%=cp%>/images/addReviewIcon.PNG" width="20px" height="20px">나의 찜 리스트</h5>
 	<hr>
 	</div>
 	<br><br>

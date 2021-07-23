@@ -156,9 +156,9 @@
 						$("<tr>").appendTo("#result");
 					
 					// get 방식으로 공연코드를 넘겨 줌으로써 클릭시 공연 상세정보로 이동할 수 있도록 함
-					$("<td><a href='playdetail.action?play_cd="
+					$("<div id='td'><td><a href='playdetail.action?play_cd="
 							+ list[i].play_cd + "'>" + "<img src='"
-							+ list[i].play_img + "' class='playImg'></a><td>").appendTo("#result");
+							+ list[i].play_img + "' class='playImg'></a><td></div>").appendTo("#result");
 					
 					// 테스트
 					//$("<td>" + i + "<td>").appendTo("#result"); 
